@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bigbasket
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: bigbasket
+    password: bigbasket
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+BASE_URL: http://localhost:8081/
+STRIPE_SECRET_KEY: pk_test_51HsXKZAhmcFkG2beKFbPv1Il9tTwaVnCHaxmxsJkj9ojpHL6K4PUK3R7C0jmeDzbFD5Q0CzuSx4qoIwDPHtp1deK00qFtYjWJB
