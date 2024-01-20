@@ -14,6 +14,7 @@ public class WebConfig {
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
+            @SuppressWarnings("NullableProblems")
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
